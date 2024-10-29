@@ -7,4 +7,10 @@ public class Book {
         this.author = author;
         this.isbn = isbn;
     }
+
+    @Override
+    public void performAction() {
+        System.out.println("Performing action: Reading a few pages...");
+        System.out.println("Action Result: You've read a few pages of '" + name + "' by " + author + ".");
+    }
 }
