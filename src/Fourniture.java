@@ -1,4 +1,4 @@
-public class Fourniture {
+public class Fourniture extends Item{
 
     private String material;
     private int weightCapacity;
