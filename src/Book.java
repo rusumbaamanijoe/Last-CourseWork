@@ -13,4 +13,12 @@ public class Book {
         System.out.println("Performing action: Reading a few pages...");
         System.out.println("Action Result: You've read a few pages of '" + name + "' by " + author + ".");
     }
+
+    @Override
+    public void showDetails() {
+        System.out.println("Type: Book");
+        super.showDetails(); // Calls the common showDetails from Item
+        System.out.println("Author: " + author);
+        System.out.println("ISBN: " + isbn);
+    }
 }
