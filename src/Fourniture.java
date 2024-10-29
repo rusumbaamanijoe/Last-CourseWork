@@ -9,4 +9,9 @@ public class Fourniture {
         this.weightCapacity = weightCapacity;
     }
 
+    @Override
+    public void performAction() {
+        System.out.println("Performing action: Checking stability...");
+        System.out.println("Action Result: The " + material + " furniture can hold up to " + weightCapacity + "kg.");
+    }
 }
