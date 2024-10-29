@@ -22,4 +22,13 @@ public class Electronic {
             System.out.println("Action Result: The " + model + " is now powered on.");
         }
     }
+
+    @Override
+    public void showDetails() {
+        System.out.println("Type: Electronic");
+        super.showDetails(); // Calls the common showDetails from Item
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println("Power Status: " + (isPoweredOn ? "On" : "Off"));
+    }
 }
