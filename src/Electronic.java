@@ -1,4 +1,4 @@
-public class Electronic {
+public class Electronic extends Item {
 
     private String brand;
     private String model;
